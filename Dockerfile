@@ -1,8 +1,9 @@
 FROM node:14.17.5
-COPY / /webapp
+COPY . /webapp
 WORKDIR /webapp
-RUN npm --version
-RUN npm i yarn
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+RUN yarn --version
+RUN $HOME/.yarn/bin/yarn install
 RUN yarn --version
 RUN yarn
 RUN yarn run build
