@@ -5,6 +5,5 @@ RUN yarn --version
 RUN node --version
 RUN yarn
 RUN yarn run build
-RUN ls
 WORKDIR /webapp/dist
 RUN ls
