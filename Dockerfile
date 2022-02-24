@@ -8,4 +8,3 @@ RUN yarn run build
 RUN ls
 WORKDIR /dist
 RUN ls
-RUN cat index.html
