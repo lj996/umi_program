@@ -1,9 +1,9 @@
-FROM node:14.17.5
+FROM lj996/node14-yarn
 COPY . /webapp
 WORKDIR /webapp
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 RUN yarn --version
+RUN node --version
 RUN yarn
 RUN yarn run build
+RUN ls
 WORKDIR /dist
-RUN cat index.html
