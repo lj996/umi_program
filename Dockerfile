@@ -2,7 +2,7 @@ FROM node:14.17.5
 COPY / /webapp
 WORKDIR /webapp
 RUN npm --version
-RUN npm i -g yarn
+RUN npm i yarn
 RUN yarn --version
 RUN yarn
 RUN yarn run build
