@@ -7,3 +7,5 @@ RUN yarn
 RUN yarn run build
 WORKDIR /webapp/dist
 RUN ls
+EXPOSE 3000
+ENTRYPOINT yarn run server
