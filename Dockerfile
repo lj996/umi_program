@@ -5,8 +5,8 @@ RUN yarn --version
 RUN node --version
 RUN yarn
 RUN yarn run build
-RUN rm -f node_modules
-RUN rm -f src
+RUN rm -rf node_modules
+RUN rm -rf src
 WORKDIR /webapp/dist
 RUN ls
 EXPOSE 3000
