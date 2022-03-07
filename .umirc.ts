@@ -6,8 +6,14 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
-    { path: '/user', component: '@/pages/user' },
+    {
+      path: '/',
+      component: '@/pages/index',
+      menu: {
+        name: '首页',
+      },
+    },
+    { path: '/user', component: '@/pages/user', name: '用户' },
   ],
   fastRefresh: {},
   publicPath: './',
