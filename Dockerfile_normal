@@ -6,7 +6,7 @@ RUN node --version
 RUN yarn
 RUN yarn run build
 
-FROM node14:14.17.5-alpine3.14
+FROM node:14.17.5-alpine3.14
 COPY --from=build /webapp/dist /webapp
 COPY --from=build /webapp/server /webapp/server
 WORKDIR /webapp
