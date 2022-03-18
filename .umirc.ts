@@ -1,22 +1,29 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  layout: {},
+  layout: { title: '龙俊的实验室', logo: null, headerRender: false },
   nodeModulesTransform: {
     type: 'none',
-  },
-  history: {
-    type: 'hash',
   },
   routes: [
     {
       path: '/',
-      component: '@/pages/index',
-      menu: {
-        name: '首页',
-      },
+      component: '@/pages/price',
+      name: '报价计算器',
+      icon: 'AccountBookOutlined',
     },
-    { path: '/user', component: '@/pages/user', name: '用户' },
+    {
+      path: '/particle',
+      component: '@/pages/index',
+      name: '粒子效果',
+      icon: 'NodeIndexOutlined',
+    },
+    {
+      path: '/3d',
+      component: '@/pages/three',
+      name: '3D',
+      icon: 'SwitcherTwoTone',
+    },
   ],
   fastRefresh: {},
   publicPath: './',
