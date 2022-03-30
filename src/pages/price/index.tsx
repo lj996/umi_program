@@ -35,31 +35,5 @@ export default function () {
         </Card.Grid>
       ))}
     </Card>
-    // <div>
-    //   <h3>
-    //     报价计算器 <Button>新增模块</Button>
-    //   </h3>
-    //   <div className="moduleList">
-    //     <div className="module">
-    //       <div className="moduleHeader">
-    //         <div>
-    //           总价：
-    //           <input type="number" className="totalPrice" />
-    //         </div>
-    //         <span className="closeModuleButton">x</span>
-    //       </div>
-    //       <ol className="list">
-    //         <li className="item">
-    //           <input type="number" className="count" placeholder="数量" />
-    //           <input type="number" className="price" placeholder="单价" />
-    //           <span className="delButton">删除</span>
-    //           <br />
-    //         </li>
-    //       </ol>
-    //       <div className="addButton">+添加</div>
-    //       <div className="submit">等于总价</div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
